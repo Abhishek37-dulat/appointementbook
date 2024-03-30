@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Appointment Booking App</title>
+  </head>
+  <body>
+    <div class="main_app">
+      <form
+        class="main_app_form"
+        onsubmit="handleBookappointment(event)"
+        method="POST"
+      >
+        <div class="form_app_title">
+          <p>Appointment Booking App</p>
+        </div>
+        <div class="form_app_input">
+          <label for="username">Enter UserName</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter UserName"
+          />
+        </div>
+        <div class="form_app_input">
+          <label for="emailid">Enter Email Id</label>
+          <input
+            type="email"
+            name="emailid"
+            id="emailid"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="form_app_input">
+          <label for="phone">Enter Phone Number</label>
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Enter Phone Number"
+          />
+        </div>
+        <div class="form_app_button">
+          <button type="submit">Book Now</button>
+        </div>
+      </form>
+    </div>
+    <div class="main_app_result">
+      <div class="details_box">
+        <p>Abhishek Dulat</p>
+        <p>dulatabhishek@gmail.com</p>
+        <p>9518118356</p>
+        <button>Edit</button>
+        <button>Delete</button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
