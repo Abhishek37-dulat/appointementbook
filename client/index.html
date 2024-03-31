@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Appointment Booking App</title>
   </head>
   <body>
@@ -44,19 +45,12 @@
           />
         </div>
         <div class="form_app_button">
-          <button type="submit">Book Now</button>
+          <button id="formsubmit" type="submit">Book Now</button>
+          <button id="formsubmitupdate" type="submit">Update</button>
         </div>
       </form>
     </div>
-    <div class="main_app_result">
-      <div class="details_box">
-        <p>Abhishek Dulat</p>
-        <p>dulatabhishek@gmail.com</p>
-        <p>9518118356</p>
-        <button>Edit</button>
-        <button>Delete</button>
-      </div>
-    </div>
+    <div class="main_app_result" id="main_app_result"></div>
   </body>
   <script src="app.js"></script>
 </html>
